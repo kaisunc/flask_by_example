@@ -1,7 +1,6 @@
 import os
 
-print os.environ
-#print(os.environ['DATABASE_URL'])	
+
 class Config(object):
 	DEBUG = False
 	TESTING = False
@@ -23,3 +22,4 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
 	TESTING = True
 
+print(os.environ['DATABASE_URL'])	
