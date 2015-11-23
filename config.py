@@ -18,8 +18,11 @@ class StagingConfig(Config):
 class DevelopmentConfig(Config):
 	DEVELOPMENT = True
 	DEBUG = True
+	HOST='0.0.0.0'
+	PORT='5000'
 
 class TestingConfig(Config):
 	TESTING = True
 
-print(os.environ['DATABASE_URL'])	
+#print(os.environ['DATABASE_URL'])
+#print Config.HOST
